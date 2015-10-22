@@ -28,11 +28,11 @@ public class Server {
              kfis.close();
              
              Scanner in = new Scanner(System.in);
-             System.out.println("Escolha o tipo de especificação: 1- RC4 , 2 - AES/CBC/NoPadding, 3 - AES/CBC/PKCS5Padding"
-                     + "4- AES/CFB/CFB8/NoPadding, 5- AES/CFB8/NoPadding, 6- AES/CFB/NoPadding");
+             System.out.println("Escolha o esquema de encriptacao e respetivo modo: \n 1 - RC4  \n 2 - AES/CBC/NoPadding \n 3 - AES/CBC/PKCS5Padding"
+                     + "\n 4 - AES/CFB/CFB8/NoPadding, \n 5 - AES/CFB8/NoPadding, \n 6 - AES/CFB/NoPadding");
              
               int n = in.nextInt();
-              System.out.println("e é isto: "+n);
+             // System.out.println("e é isto: "+n);
               String mode;
                switch (n)
                {
@@ -98,8 +98,8 @@ public class Server {
                  
                    // Get socket input stream
                    InputStream sis = s_novo.getInputStream();
-                   System.out.println("é isto que sai do InputStream");
-                   System.out.println(sis);
+                   //System.out.println("é isto que sai do InputStream");
+                   //System.out.println(sis);
                  
                    // Get file 50 bytes at a time
                    byte[] buffer = new byte[50];
