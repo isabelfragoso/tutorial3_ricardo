@@ -29,7 +29,7 @@ public class Client {
              SecretKeySpec sk = new SecretKeySpec(key, "AES");
              
              //Inicia a cipher para encriptar
-             Cipher cipher = Cipher.getInstance("AES/CFB8/PKCS5PADDING");
+             Cipher cipher = Cipher.getInstance("AES/CBC/NoPadding");
              
              // Initialisation vector:
             byte[] iv = new byte[cipher.getBlockSize()];
