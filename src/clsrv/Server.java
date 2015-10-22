@@ -29,7 +29,7 @@ public class Server {
              SecretKeySpec sk = new SecretKeySpec(key, "AES");
              
              //Cipher Type Initialization
-             Cipher cipher = Cipher.getInstance("AES/CBC/NoPadding");
+             Cipher cipher = Cipher.getInstance("AES/CFB8/PKCS5PADDING");
              
              
             // Initialisation vector:
