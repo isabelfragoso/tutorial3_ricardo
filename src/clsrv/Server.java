@@ -42,7 +42,7 @@ public class Server {
                     break; 
                 case 3: mode = "AES/CBC/PKCS5Padding";
                     break;
-                case 4: mode = "AES/CFB/CFB8/NoPadding";
+                case 4: mode = "AES/CFB8/NoPadding";
                     break;
                 case 5: mode = "AES/CFB8/NoPadding";
                     break;
