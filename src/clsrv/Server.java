@@ -29,7 +29,7 @@ public class Server {
              
              Scanner in = new Scanner(System.in);
              System.out.println("Escolha o esquema de encriptacao e respetivo modo: \n 1 - RC4  \n 2 - AES/CBC/NoPadding \n 3 - AES/CBC/PKCS5Padding"
-                     + "\n 4 - AES/CFB/CFB8/NoPadding, \n 5 - AES/CFB8/NoPadding, \n 6 - AES/CFB/NoPadding");
+                     + "\n 4 - AES/CFB8/PKCS5Padding, \n 5 - AES/CFB8/NoPadding, \n 6 - AES/CFB/NoPadding");
              
               int n = in.nextInt();
              // System.out.println("e é isto: "+n);
@@ -42,7 +42,7 @@ public class Server {
                     break; 
                 case 3: mode = "AES/CBC/PKCS5Padding";
                     break;
-                case 4: mode = "AES/CFB8/NoPadding";
+                case 4: mode = "AES/CFB8/PKCS5Padding";
                     break;
                 case 5: mode = "AES/CFB8/NoPadding";
                     break;
